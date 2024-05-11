@@ -9,6 +9,9 @@ nav {
     justify-content: space-around;
     align-items: center;
     padding: 20px;
+    position: sticky;
+    top: 0;
+    background-color: white; 
 }
 
 .logo img {
@@ -323,4 +326,63 @@ nav {
         width: 20px;
         height: 3px;
     }
+}
+
+.submenu-3,
+.submenu-4 {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    padding: 20px;
+    width: 100%;
+    max-width: 400px; 
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.submenu-3.open,
+.submenu-4.open {
+    display: block;
+}
+
+.submenu-3.open {
+    transform: translateY(0);
+}
+
+.submenu-4.open {
+    transform: translateY(-100%);
+}
+
+.submenu-3.open .sub_img,
+.submenu-4.open .sub_img {
+    margin-top: 20px;
+}
+
+.submenu-3.open .sub_img button,
+.submenu-4.open .sub_img button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submenu-3.open .sub_img button:hover,
+.submenu-4.open .sub_img button:hover {
+    background-color: #45a049;
+}
+
+.submenu-3 h2,
+.submenu-4 h2 {
+    color: #333;
+}
+
+.submenu-3 p,
+.submenu-4 p {
+    color: #666;
 }
