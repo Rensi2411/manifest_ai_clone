@@ -28,9 +28,11 @@
     padding: 10px 110px;
     font-size: 18px;
 }
-foot-2,foot-3,foot-4,foot-5,foot-6 p{
-    padding :5px;
+.foot-1 button:hover{
+    background-color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
 }
+
 .foot-7{
  display: flex;
  justify-content: space-between;
@@ -40,8 +42,7 @@ foot-2,foot-3,foot-4,foot-5,foot-6 p{
     width: 10%;
 }
 
-
-
+/* Styling for the footer content at smaller screen sizes */
 @media screen and (max-width: 990px) {
     .foot-1a {
         display: grid;
