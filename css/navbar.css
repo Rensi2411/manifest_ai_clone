@@ -467,6 +467,15 @@ nav {
     .hamburger-menu {
         display: flex;
     }
+    .nav-items.show ul li.has-submenu:hover .submenu-1 {
+        width: 550px;
+    }
+    .nav-items.show ul li.has-submenu .submenu-1 .sub_img {
+        width: 90%;
+    }
+    .nav-items.show ul li:hover .submenu-2 {
+        width: 500px;
+    }
 }
 
 /* Responsive Design Styling for Small Screens */
