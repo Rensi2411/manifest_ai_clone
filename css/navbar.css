@@ -477,7 +477,18 @@ nav {
         width: 500px;
     }
 }
-
+@media screen and (max-width: 768px) {
+.nav-items.show ul li.has-submenu:hover .submenu-1 {
+    
+    width: 350px;
+}
+.nav-items.show ul li.has-submenu .submenu-1 .sub_img{
+    width: 85%;
+}
+.nav-items.show ul li:hover .submenu-2{
+    width: 340px;
+}
+}
 /* Responsive Design Styling for Small Screens */
 @media screen and (max-width: 460px) {
     .logo img {
